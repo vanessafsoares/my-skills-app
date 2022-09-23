@@ -43,3 +43,6 @@ yarn start
 Give a ⭐️ if this project helped you!
 
 ---
+
+### Mais detalhes
+[react-native-template](https://github.com/Rocketseat/react-native-template-rocketseat-advanced)
