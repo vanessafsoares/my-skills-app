@@ -16,25 +16,36 @@ git clone https://github.com/vanessafsoares/my-skills-app.git
 ## Install dependencies
 
 ```sh
-yarn
+npm install
 ```
 
 ## Build IOS
 
 ```sh
-cd ios && pod install && cd .. && yarn ios
+cd ios && pod install && cd .. && npm run ios
 ```
 
 ## Build Android
 
 ```sh
-yarn android
+npm run android
 ```
 
+## Run detox e2e tests
+
+```sh
+  npm run detox
+```
+
+### Run detox single spec file
+  
+```sh
+  npm run detox e2e/tests/add-skill.e2e.js
+```
 ## Usage after build
 
 ```sh
-yarn start
+npm run start
 ```
 
 
