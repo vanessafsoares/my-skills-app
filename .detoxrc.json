@@ -1,0 +1,43 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "artifacts": {
+    "rootDir": "./e2e/artifacts/",
+    "pathBuilder": "./e2e/config/testpathbuilder.js",
+    "plugins": {
+      "screenshot": {
+        "enabled": true,
+        "shouldTakeAutomaticSnapshots": false,
+        "keepOnlyFailedTestsArtifacts": true,
+        "takeWhen": {
+          "testStart": false,
+          "testDone": false,
+          "appNotReady": false
+        }
+      },
+      "video": {
+        "simulator": {
+          "codec": "hevc"
+        }
+      }
+    }
+  },
+  "configurations": {
+    "ios": {
+      "type": "ios.simulator",
+      "name": "MySkills",
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/myskills.app",
+      "build": "xcodebuild -workspace ios/myskills.xcworkspace -scheme myskills -sdk iphonesimulator -derivedDataPath ios/build",
+      "device": {
+        "type": "iPhone 11"
+      }
+    },
+    "android": {
+      "type": "android.emulator",
+      "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY",
+      "device": {
+        "avdName": "Pixel_2_API_29"
+      }
+    }
+  }
+}
