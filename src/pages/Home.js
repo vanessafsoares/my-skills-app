@@ -28,6 +28,7 @@ export function Home() {
         <Text style={styles.title}>Welcome, Vanessa</Text>
 
         <TextInput
+          testID="new-skill"
           style={styles.input}
           placeholder="New skill"
           placeholderTextColor="#555"
