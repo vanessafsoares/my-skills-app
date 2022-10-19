@@ -1,0 +1,14 @@
+name: Create and upload APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'enter dev or prod'
+        required: true
+        default: 'prod'
+      bs:
+        description: 'Upload to browserstack'
+        required: true
+        type: boolean
+        default: true
