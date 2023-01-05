@@ -19,7 +19,7 @@ git clone https://github.com/vanessafsoares/my-skills-app.git
 npm install
 ```
 
-## Build IOS
+## Build iOS
 
 ```sh
 cd ios && pod install && cd .. && npm run ios
